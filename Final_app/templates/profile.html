@@ -1,0 +1,8 @@
+<form method="POST" action="/api/profile/">
+  {% csrf_token %}
+  <input name="phone" placeholder="Phone">
+  <input name="address" placeholder="Address">
+  <input name="avatar" placeholder="Avatar URL">
+  <textarea name="preferences" placeholder='{"theme": "dark"}'></textarea>
+  <button type="submit">Update Profile</button>
+</form>

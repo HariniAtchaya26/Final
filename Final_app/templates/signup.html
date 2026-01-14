@@ -1,0 +1,6 @@
+<form method="POST" action="/api/signup/">
+  {% csrf_token %}
+  <input name="username" placeholder="Username">
+  <input name="password" type="password" placeholder="Password">
+  <button type="submit">Sign Up</button>
+</form>
